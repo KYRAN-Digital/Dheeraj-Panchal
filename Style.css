@@ -1,4 +1,4 @@
-:root {
+/*:root {
   --bg: #f6f1e8;
   --ink: #10211f;
   --muted: rgba(16, 33, 31, 0.7);
@@ -11,6 +11,29 @@
   --accent0: #b76a2a;
   --accent1: #f0b45c;
 
+  --radius: 18px;
+  --radius-lg: 28px;
+}*/
+:root {
+  /* Base */
+  --bg: #0d0d0d; /* near black for depth */
+  --ink: #ffffff; /* primary text */
+  --muted: rgba(255, 255, 255, 0.65);
+
+  /* Surfaces */
+  --card: rgba(255, 255, 255, 0.05); /* subtle glass effect */
+  --stroke: rgba(255, 255, 255, 0.08);
+  --shadow: 0 18px 60px rgba(0, 0, 0, 0.6);
+
+  /* Brand Colors */
+  --brand0: #000000;   /* pure black */
+  --brand1: #545454;   /* grey */
+
+  /* Accent (Primary Highlight) */
+  --accent0: #e41f26;  /* main red */
+  --accent1: #ff4d4f;  /* lighter red for hover/gradient */
+
+  /* Radius */
   --radius: 18px;
   --radius-lg: 28px;
 }
