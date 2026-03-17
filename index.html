@@ -47,23 +47,14 @@
           <div class="meta__row">
             <span class="meta__k">Mobile</span>
             <span class="meta__v">+91 93516 00811</span>
-            <button class="mini" type="button" data-copy="+919351600811" aria-label="Copy mobile number">
-              Copy
-            </button>
           </div>
           <div class="meta__row">
             <span class="meta__k">Alt</span>
             <span class="meta__v">+91 81070 07758</span>
-            <button class="mini" type="button" data-copy="+918107007758" aria-label="Copy alternate number">
-              Copy
-            </button>
           </div>
           <div class="meta__row">
             <span class="meta__k">Email</span>
             <span class="meta__v">pdhiraj015@gmail.com</span>
-            <button class="mini" type="button" data-copy="pdhiraj015@gmail.com" aria-label="Copy email address">
-              Copy
-            </button>
           </div>
         </div>
       </section>
@@ -218,9 +209,7 @@
           Ground Floor, Archi Arihant Building, 100 ft. Road, Shobhagpura, Udaipur, Rajasthan - 313001.
         </p>
         <div class="details__grid">
-          <a class="chip" href="mailto:info@archigroup.in" aria-label="Email ARCHI Group">
-            info@archigroup.in
-          </a>
+          <span class="chip chip--static" aria-label="ARCHI Group email">info@archigroup.in</span>
           <a class="chip" href="https://www.archigroup.in/" target="_blank" rel="noopener" aria-label="Open ARCHI website">
             www.archigroup.in
           </a>
@@ -498,59 +487,11 @@
         </small>
       </footer>
 
-      <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
     </main>
     <script>
       (() => {
-        const toastEl = document.getElementById("toast");
         const yearEl = document.getElementById("year");
         if (yearEl) yearEl.textContent = String(new Date().getFullYear());
-
-        let toastTimer = null;
-        function toast(message) {
-          if (!toastEl) return;
-          toastEl.textContent = message;
-          toastEl.classList.add("is-on");
-          window.clearTimeout(toastTimer);
-          toastTimer = window.setTimeout(() => toastEl.classList.remove("is-on"), 1800);
-        }
-
-        function fallbackCopy(text) {
-          const ta = document.createElement("textarea");
-          ta.value = text;
-          ta.setAttribute("readonly", "");
-          ta.style.position = "fixed";
-          ta.style.opacity = "0";
-          document.body.appendChild(ta);
-          ta.select();
-          try {
-            document.execCommand("copy");
-            toast("Copied");
-          } catch {
-            toast("Copy not supported");
-          } finally {
-            document.body.removeChild(ta);
-          }
-        }
-
-        async function copyText(text) {
-          if (!text) return;
-          if (navigator.clipboard && window.isSecureContext) {
-            try {
-              await navigator.clipboard.writeText(text);
-              toast("Copied");
-              return;
-            } catch {
-              // fall through
-            }
-          }
-          fallbackCopy(text);
-        }
-
-        for (const btn of document.querySelectorAll("[data-copy]")) {
-          btn.addEventListener("click", () => copyText(btn.getAttribute("data-copy")));
-        }
-
       })();
     </script>
   </body>
