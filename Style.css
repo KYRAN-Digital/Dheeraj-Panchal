@@ -119,65 +119,63 @@ body {
   font-weight: 600;
 }
 */
-.hero-card {
+
+
+.hero {
+  width: 100%;
+}
+
+.hero__image-wrapper {
   position: relative;
   width: 100%;
   height: 420px;
-  border-radius: 20px;
   overflow: hidden;
-  background: #f5efe6; /* cream fallback */
+  border-radius: 20px;
 }
 
-/* Full image */
-.hero-img {
+.hero__img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-/* Gradient overlay for readability */
-.hero-card::after {
-  content: "";
+/* Overlay */
+.hero__overlay {
   position: absolute;
-  inset: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px;
   background: linear-gradient(
     to top,
-    rgba(180, 30, 30, 0.85),   /* deep red */
-    rgba(180, 30, 30, 0.4),
+    rgba(139, 30, 45, 0.9),
+    rgba(139, 30, 45, 0.4),
     transparent
   );
+  color: var(--bg);
 }
 
-/* Text container */
-.overlay {
-  position: absolute;
-  bottom: 25px;
-  left: 25px;
-  right: 25px;
-  color: #f5efe6; /* cream text */
-  z-index: 2;
-}
-
-/* Name */
-.overlay h1 {
-  font-size: 2.2rem;
+/* Typography */
+.hero__overlay h1 {
+  font-size: 32px;
   font-weight: 700;
-  margin-bottom: 6px;
-  letter-spacing: 0.5px;
+  margin-bottom: 5px;
 }
 
-/* Role */
-.overlay .role {
-  font-size: 1.2rem;
-  font-weight: 500;
-  opacity: 0.95;
+.role {
+  font-size: 18px;
+  font-weight: 600;
 }
 
-/* Company */
-.overlay .org {
-  font-size: 0.95rem;
-  opacity: 0.8;
-  margin-top: 4px;
+.dept {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.org {
+  font-size: 15px;
+  margin-top: 6px;
+  opacity: 0.85;
 }
 
 .meta {
