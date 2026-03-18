@@ -64,16 +64,16 @@ body {
 } 
 .hero {
   display: grid;
-  grid-template-columns: 92px 1fr;
-  gap: 14px;
-  padding: 16px;
+  grid-template-columns: 110px 1fr;
+  gap: 18px;
+  padding: 22px;
   animation: rise 620ms 60ms ease-out both;
 }
 
 .avatar {
-  height: 92px;
-  width: 92px;
-  border-radius: 24px;
+  height: 110px;
+  width: 110px;
+  border-radius: 28px;
   overflow: hidden;
   position: relative;
   background:
@@ -104,7 +104,7 @@ body {
   font-family: Fraunces, ui-serif, Georgia, serif;
   font-weight: 700;
   letter-spacing: 0.01em;
-  font-size: clamp(28px, 4.4vw, 40px);
+  font-size: clamp(32px, 5vw, 46px);
   line-height: 1.08;
 }
 
@@ -155,18 +155,18 @@ body {
 
 .links {
   display: grid;
-  gap: 12px;
-  margin-top: 14px;
+  gap: 8px;
+  margin-top: 12px;
   animation: rise 760ms 120ms ease-out both;
 }
 
 
 .link {
   display: grid;
-  grid-template-columns: 44px 1fr;
-  gap: 12px;
+  grid-template-columns: 38px 1fr;
+  gap: 10px;
   align-items: center;
-  padding: 14px 14px;
+  padding: 11px 12px;
   border-radius: var(--radius);
   text-decoration: none;
 
@@ -192,9 +192,9 @@ body {
   filter: brightness(1.08) saturate(1.1);
 }
 .ico {
-  height: 44px;
-  width: 44px;
-  border-radius: 14px;
+  height: 38px;
+  width: 38px;
+  border-radius: 12px;
   display: grid;
   place-items: center;
 
