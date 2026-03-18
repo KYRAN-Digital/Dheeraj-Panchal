@@ -298,13 +298,13 @@ body {
   background:
     radial-gradient(
       900px 250px at 10% 0%,
-      rgba(224, 90, 90, 0.45),   /* soft red glow */
+      rgba(224, 90, 90, 0.45),   
       transparent 42%
     ),
     linear-gradient(
       135deg,
-      rgba(168, 50, 50, 0.98),   /* deep red */
-      rgba(15, 15, 16, 0.98)     /* black */
+      rgba(168, 50, 50, 0.98),   
+      rgba(15, 15, 16, 0.98)   
     );
 
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -337,6 +337,23 @@ body {
 
   transition: all 0.2s ease;
 }
+.link--accent .ico svg {
+  width: 18px;
+  height: 18px;
+}
+.link--accent .link__t {
+  font-size: 12px;
+}
+
+.link--accent .link__s {
+  font-size: 10px;
+  opacity: 0.75;
+}
+.link--accent:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
 .link--ghost {
   color: var(--brand0);
 
