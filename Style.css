@@ -89,7 +89,7 @@ body {
   width: 100%;
   padding: 12px 20px 6px;
   
-    
+  display: flex; 
   flex-direction: column;
  
    background: linear-gradient(
@@ -128,7 +128,7 @@ body {
 
 .org {
   font-size: 15px;
-  margin-top: 6px;
+  margin-bottom: 6px;
   opacity: 0.85;
   margin-top: 3px;
 }
@@ -340,11 +340,6 @@ margin-bottom: 20px;
   -webkit-overflow-scrolling: touch;
 }
 
-.rail::-webkit-scrollbar {
-  height: 10px;
-}
-
-
 .rail::-webkit-scrollbar-thumb:hover {
   background: rgba(168, 50, 50, 0.6); /* red accent */
 }
@@ -550,13 +545,6 @@ margin-bottom: 20px;
   transition: all 140ms ease;
 }
 
-.chip--static {
-  cursor: text;
-  user-select: text;
-  -webkit-user-select: text;
-
-  background: rgba(255, 255, 255, 0.6);
-}
 .chip--icon {
   padding: 10px;          /* override horizontal padding */
   width: 42px;
