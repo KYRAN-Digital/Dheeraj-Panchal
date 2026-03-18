@@ -343,6 +343,54 @@ body {
   opacity: 0.65;
   cursor: not-allowed;
 }
+.links__title {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--ink);
+}
+
+.links__rail {
+  display: flex;
+  gap: 12px;
+
+  overflow-x: auto;
+  padding-bottom: 6px;
+
+  scroll-snap-type: x mandatory;
+}
+
+.links__rail::-webkit-scrollbar {
+  display: none;
+}
+.link--icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 52px;
+  height: 52px;
+
+  padding: 0; /* remove text padding */
+
+  border-radius: 16px;
+
+  scroll-snap-align: start;
+}
+.link--icon .ico {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.link--icon {
+  transition: all 0.2s ease;
+}
+
+.link--icon:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.9);
+}
+
 
 .details {
   margin-top: 14px;
