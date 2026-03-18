@@ -453,7 +453,7 @@ body {
   min-width: 52px;
   height: 52px;
 
-  padding: 0; /* remove text padding */
+  padding: 0;
 
   border-radius: 16px;
 
