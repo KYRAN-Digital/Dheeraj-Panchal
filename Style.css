@@ -125,36 +125,44 @@ body {
   height: 420px;
   border-radius: 20px;
   overflow: hidden;
-  background: #f5efe6; /* cream fallback */
+  background: #f5efe6;
+
+  display: block;            /* prevents layout issues */
 }
 
-/* Full image */
+/* Image */
 .hero-img {
+  position: absolute;        /* KEY FIX */
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
+  z-index: 0;
 }
 
-/* Gradient overlay for readability */
+/* Gradient */
 .hero-card::after {
   content: "";
   position: absolute;
   inset: 0;
   background: linear-gradient(
     to top,
-    rgba(180, 30, 30, 0.85),   /* deep red */
+    rgba(180, 30, 30, 0.85),
     rgba(180, 30, 30, 0.4),
     transparent
   );
+  z-index: 1;
 }
 
-/* Text container */
+/* Text */
 .overlay {
   position: absolute;
   bottom: 25px;
   left: 25px;
   right: 25px;
-  color: #f5efe6; /* cream text */
+  color: #f5efe6;
   z-index: 2;
 }
 
