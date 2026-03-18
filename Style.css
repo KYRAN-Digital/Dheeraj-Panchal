@@ -376,11 +376,10 @@ margin-bottom: 20px;
 .links__rail::-webkit-scrollbar {
   display: none;
 }
+
 .link--icon {
   flex: 1;               
-   background: transparent !important;   /* ❌ remove black gradient */
-  box-shadow: none;                    /* optional: remove depth */
-  border: none;                        /* optional: cleaner look */
+                     
   display: flex;
   align-items: center;
   justify-content: center;
@@ -393,6 +392,7 @@ margin-bottom: 20px;
 
   transition: all 0.2s ease;
 }
+
 .link--icon .ico {
   display: flex;
   align-items: center;
@@ -403,6 +403,8 @@ margin-bottom: 20px;
   transform: translateY(-2px);
   background: rgba(255, 255, 255, 0.9);
 }
+
+
 .details {
   margin-top: 14px;
   padding: 16px;
