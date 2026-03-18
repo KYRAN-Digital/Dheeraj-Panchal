@@ -173,13 +173,13 @@ body {
 .hero__overlay h1 {
   font-size: 30px;
   font-weight: 600;
-  margin-bottom: 1px;
+  margin-bottom: 0.5px;
 }
 
 .role {
   font-size: 18px;
   font-weight: 600;
-  margin-bottom: 2px;
+  margin-bottom: 1px;
 }
 
 .dept {
@@ -192,7 +192,7 @@ body {
   font-size: 15px;
   margin-top: 6px;
   opacity: 0.85;
-  margin-top: 4px;
+  margin-top: 3px;
 }
 
 .meta {
