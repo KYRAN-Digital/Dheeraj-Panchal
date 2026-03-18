@@ -376,7 +376,9 @@ body {
 }
 .link--icon {
   flex: 1;               
- 
+   background: transparent !important;   /* ❌ remove black gradient */
+  box-shadow: none;                    /* optional: remove depth */
+  border: none;                        /* optional: cleaner look */
   display: flex;
   align-items: center;
   justify-content: center;
