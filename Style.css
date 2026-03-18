@@ -107,6 +107,17 @@ body {
   font-size: clamp(32px, 5vw, 46px);
   line-height: 1.08;
 } 
+.role {
+  margin: 6px 0 0;
+  font-weight: 800;
+  color: var(--brand0);
+}
+
+.org {
+  margin: 2px 0 0;
+  color: var(--muted);
+  font-weight: 600;
+}
 */
 .hero-card {
   position: relative;
@@ -168,17 +179,7 @@ body {
   opacity: 0.8;
   margin-top: 4px;
 }
-.role {
-  margin: 6px 0 0;
-  font-weight: 800;
-  color: var(--brand0);
-}
 
-.org {
-  margin: 2px 0 0;
-  color: var(--muted);
-  font-weight: 600;
-}
 
 .meta {
   grid-column: 1 / -1;
