@@ -72,7 +72,7 @@ body {
   background:
     radial-gradient(
       1200px 800px at 12% 10%,
-      rgba(168, 50, 50, 0.08),
+      rgba(0, 0, 0, 0.05),
       transparent 55%
     ),
     radial-gradient(
@@ -80,11 +80,16 @@ body {
       rgba(0, 0, 0, 0.04),
       transparent 55%
     ),
+    radial-gradient(
+      1200px 900px at 45% 92%,
+      rgba(0, 0, 0, 0.05),
+      transparent 52%
+    ),
     linear-gradient(
       180deg,
-      #f8f2e9 0%,
+      #f7f3eb 0%,
       #f5efe6 55%,
-      #efe6da 100%
+      #efe7dc 100%
     );
 }
 .shell {
