@@ -340,13 +340,28 @@ body {
 .link--ghost {
   color: var(--brand0);
 
-  background: rgba(255, 255, 255, 0.65); /* soft cream glass */
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.85),
+      rgba(224, 90, 90, 0.08)
+    );
+
   border: 1px solid rgba(0, 0, 0, 0.08);
 
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
 }
 .link--ghost .ico {
-  background: rgba(0, 0, 0, 0.06);
+  background: linear-gradient(
+    135deg,
+    #0f0f10,   /* black */
+    #a83232    /* red */
+  );
+
+  color: #f5efe6; /* cream icon */
+
+  display: grid;
+  place-items: center;
 }
 
 .link--disabled {
