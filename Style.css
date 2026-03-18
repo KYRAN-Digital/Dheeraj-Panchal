@@ -62,7 +62,7 @@ body {
     radial-gradient(1200px 900px at 45% 92%, rgba(183, 106, 42, 0.22), transparent 52%),
     linear-gradient(180deg, #f7f3eb 0%, #f5efe5 55%, #f3ecdf 100%);
 }*/
-.bg {
+/* .bg {
   position: fixed;
   inset: 0;
   pointer-events: none;
@@ -78,6 +78,29 @@ body {
   max-width: 820px;
   margin: 0 auto;
   padding: 18px 14px 40px;
+} */
+.bg {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+
+  background:
+    radial-gradient(
+      800px 600px at 20% 15%,
+      rgba(200, 40, 40, 0.45),
+      transparent 60%
+    ),
+    radial-gradient(
+      700px 600px at 80% 25%,
+      rgba(150, 30, 30, 0.35),
+      transparent 60%
+    ),
+    linear-gradient(
+      180deg,
+      #000000 0%,
+      #0f0f10 50%,
+      #000000 100%
+    );
 }
 
 .card {
