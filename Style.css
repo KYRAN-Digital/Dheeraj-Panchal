@@ -239,7 +239,6 @@ body {
   animation: rise 760ms 120ms ease-out both;
 }
 
-
 .link {
   display: grid;
   grid-template-columns: 38px 1fr;
@@ -277,8 +276,8 @@ margin-bottom: 20px;
   display: grid;
   place-items: center;
 
-  background: transparent;
-  backdrop-filter: none;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(6px);
 }
 
 .ico svg {
@@ -372,6 +371,7 @@ margin-bottom: 20px;
   overflow-x: hidden;
   padding-bottom: 0;
 
+  scroll-snap-type: x mandatory;
 }
 
 .links__rail::-webkit-scrollbar {
@@ -379,9 +379,9 @@ margin-bottom: 20px;
 }
 .link--icon {
   flex: 1;               
-  background: none !important;
-  box-shadow: none !important;
-  border: none !important;
+   background: transparent !important;   /* ❌ remove black gradient */
+  box-shadow: none;                    /* optional: remove depth */
+  border: none;                        /* optional: cleaner look */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -403,9 +403,7 @@ margin-bottom: 20px;
 .link--icon:hover {
   transform: translateY(-2px);
   background: rgba(255, 255, 255, 0.9);
-} 
-
-
+}
 .details {
   margin-top: 14px;
   padding: 16px;
