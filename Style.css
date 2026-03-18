@@ -316,6 +316,7 @@ body {
     );
 
   border: 1px solid rgba(255, 255, 255, 0.08);
+  margin-top: 18px;
 } 
 
 .link--ghost {
@@ -364,8 +365,8 @@ body {
   display: flex;
   gap: 12px;
 
-  overflow-x: auto;
-  padding-bottom: 6px;
+  overflow-x: hidden;
+  padding-bottom: 0;
 
   scroll-snap-type: x mandatory;
 }
@@ -374,35 +375,31 @@ body {
   display: none;
 }
 .link--icon {
+  flex: 1;               
+ 
   display: flex;
   align-items: center;
   justify-content: center;
-
-  min-width: 52px;
+  
+  max-width: 60px;        
   height: 52px;
-
+  min-width: 52px;
   padding: 0;
-
   border-radius: 16px;
 
-  scroll-snap-align: start;
+  transition: all 0.2s ease;
 }
 .link--icon .ico {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.link--icon {
-  transition: all 0.2s ease;
-}
 
 .link--icon:hover {
   transform: translateY(-2px);
   background: rgba(255, 255, 255, 0.9);
 } 
-.links__rail {
-  -webkit-overflow-scrolling: touch;
-}
+
 
 .details {
   margin-top: 14px;
