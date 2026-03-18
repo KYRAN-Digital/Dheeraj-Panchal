@@ -354,14 +354,16 @@ body {
 .link--ghost .ico {
   background: linear-gradient(
     135deg,
-    #0f0f10,   /* black */
-    #a83232    /* red */
+    #0f0f10,
+    #a83232
   );
-
-  color: #f5efe6; /* cream icon */
 
   display: grid;
   place-items: center;
+}
+.link--ghost .ico svg {
+  stroke: #f5efe6; /* cream lines */
+  fill: none;
 }
 
 .link--disabled {
